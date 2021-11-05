@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		System.out.println("input one word");
+		Scanner sc = new Scanner(System.in);
+		String text = sc.next();
+		int j = 0;
+		char word = 'b';
+		char[] mas = text.toCharArray();
+		for (int i = 0; i < mas.length; i++) {
+			char l = text.charAt(i);
+			if (word == l) {
+				j++;
+			}
+		}
+		System.out.println("there " + j + " times 'b'");
+	}
+
+}
